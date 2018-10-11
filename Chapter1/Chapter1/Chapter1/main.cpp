@@ -15,8 +15,15 @@ using std::cout;
 int add(int, int);
 
 int main(int argc, const char *argv[]) {
+
+    int chest = 42; // 十进制
+    int waist = 0x42; // 16进制
+    int inseam = 042; // 10进制
+    cout << "chest=" << chest << ",waist=" << waist << ",inseam=" << inseam << endl;
+
     cout << "Hello, World!\n";
     int y = add(1, 2);
+    cout<< SHRT_MAX << "," << SHRT_MIN << endl;
     double user = sqrt(10) + rand();
     cout << "user=" << user << ", " << y << endl;
     cout << INT_MAX << "," << LONG_LONG_MIN << endl;
